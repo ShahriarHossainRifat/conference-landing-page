@@ -7,7 +7,6 @@ import {
   Grid,
   Card,
   CardContent,
-  CardHeader,
   TextField,
   Button,
   FormControl,
@@ -19,7 +18,6 @@ import {
   Divider,
   Alert,
   CircularProgress,
-  Stack,
   useTheme,
   Stepper,
   Step,
@@ -34,8 +32,6 @@ import {
 } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import EventIcon from "@mui/icons-material/Event";
-import PaymentIcon from "@mui/icons-material/Payment";
-import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import { motion } from "framer-motion";
 import { AnimationWrapper } from "./AnimationWrapper";
 import { RegistrationFormData } from "./types";
@@ -47,7 +43,6 @@ const TicketOption = ({
   features,
   value,
   currentValue,
-  onChange,
 }: {
   title: string;
   price: string;
@@ -57,7 +52,6 @@ const TicketOption = ({
   currentValue: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
-  const theme = useTheme();
   const isSelected = value === currentValue;
 
   return (

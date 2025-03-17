@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -10,7 +10,7 @@ import Registration from "./components/Registration";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
 import FloatingAction from "./components/FloatingAction";
-import { Container, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import { AnimatePresence } from "framer-motion";
 
 function App() {

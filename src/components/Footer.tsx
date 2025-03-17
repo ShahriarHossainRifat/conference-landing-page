@@ -12,7 +12,6 @@ import {
   IconButton,
   Divider,
   Paper,
-  useTheme,
   InputAdornment,
   Tooltip,
 } from "@mui/material";
@@ -27,7 +26,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import SendIcon from "@mui/icons-material/Send";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 import { AnimationWrapper } from "./AnimationWrapper";
 
 const SocialIcon = ({
@@ -39,7 +37,6 @@ const SocialIcon = ({
   label: string;
   href: string;
 }) => {
-  const theme = useTheme();
 
   return (
     <Tooltip title={label}>
@@ -89,7 +86,6 @@ const FooterLink = ({ label, href }: { label: string; href: string }) => {
 };
 
 const Footer: React.FC = () => {
-  const theme = useTheme();
 
   const [email, setEmail] = React.useState("");
   const [subscribed, setSubscribed] = React.useState(false);

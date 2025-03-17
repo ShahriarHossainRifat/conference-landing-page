@@ -9,16 +9,14 @@ import {
   Card,
   CardMedia,
   CardContent,
-  Divider,
   useTheme,
 } from "@mui/material";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { AnimationWrapper } from "./AnimationWrapper";
 
 const About: React.FC = () => {
   const theme = useTheme();
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });

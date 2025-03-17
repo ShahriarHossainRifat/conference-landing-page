@@ -13,7 +13,6 @@ import {
   Grid,
   Chip,
   Button,
-  Divider,
   useTheme,
   Avatar,
   List,
@@ -274,7 +273,7 @@ const Schedule: React.FC = () => {
   const [savedSessions, setSavedSessions] = useState<number[]>([]);
   const theme = useTheme();
 
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
     setActiveDay(newValue);
   };
 

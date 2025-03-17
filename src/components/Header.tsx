@@ -1,5 +1,5 @@
 // src/components/Header.tsx
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -15,7 +15,6 @@ import {
   Container,
   useScrollTrigger,
   Slide,
-  Fade,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "../contexts/ThemeContext";

@@ -8,7 +8,7 @@ import {
   Stack,
   useTheme as useMuiTheme,
 } from "@mui/material";
-import { motion, MotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 
 const Hero: React.FC = () => {
